@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		img{
+			width: 100px;
+			position: absolute;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div style="background-image: url(game.png); height: 1000px; background-size: 100% 100%;">
+			
+		<!--цветы 1 ряд-->
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 13%;">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 19%;">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 25%;">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 31%;">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 33%; margin-top: 37%;">
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 17%; ">PLANT</button>	
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 23%; ">PLANT</button>
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 29%; ">PLANT</button>
+		<button class="button" style="color: red; font-weight: bold; position: absolute;  margin-left: 33%; margin-top: 35%; ">PLANT</button>
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 41%; ">PLANT</button>
+
+		<!--цветы 2 ряд-->
+		<img class="flower" src="sunflower.png"  style=" margin-left: 40%; margin-top: 13%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 40%; margin-top: 19%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 40%; margin-top: 25%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 40%; margin-top: 31%; ">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 40%; margin-top: 37%; ">
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 17%; ">PLANT</button>	
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 23%; ">PLANT</button>
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 29%; ">PLANT</button>
+		<button class="button" style="color: red; font-weight: bold; position: absolute;  margin-left: 40%; margin-top: 35%; ">PLANT</button>
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 41%; ">PLANT</button>
+
+		<!--растения 3 ряд-->
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 47%; margin-top: 13%; ">
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 47%; margin-top: 19%; ">
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 47%; margin-top: 25%; ">
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 47%; margin-top: 31%; ">
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 47%; margin-top: 37%; ">
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 17%; ">PLANT</button>	
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 23%; ">PLANT</button>
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 29%; ">PLANT</button>
+		<button class="button" style="color: red; font-weight: bold; position: absolute;  margin-left: 47%; margin-top: 35%; ">PLANT</button>
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 47%; margin-top: 41%; ">PLANT</button>
+		
+		<!--растения 3 ряд-->
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 54%; margin-top: 13%; ">
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 54%; margin-top: 19%; ">
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 54%; margin-top: 25%; ">
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 54%; margin-top: 31%; ">
+		<img class="shooter" src="peashooter.png"  style=" margin-left: 54%; margin-top: 37%; ">
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 54%; margin-top: 17%; ">PLANT</button>	
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 54%; margin-top: 23%; ">PLANT</button>
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 54%; margin-top: 29%; ">PLANT</button>
+		<button class="button" style="color: red; font-weight: bold; position: absolute;  margin-left: 54%; margin-top: 35%; ">PLANT</button>
+		<button class="button" style="color: red; font-weight: bold; position: absolute; margin-left: 54%; margin-top: 41%; ">PLANT</button>
+	</div>
+
+<script>
+	let cvetok = document.querySelectorAll(".flower")
+	let button = document.querySelectorAll(".button")
+	let shooter = document.querySelectorAll(".shooter")
+	button[0].onclick = function(){
+		cvetok[0].style.display = "block"
+		button[0].style.display = "none"
+	}
+	button[1].onclick = function(){
+		cvetok[1].style.display = "block"
+		button[1].style.display = "none"
+	}
+	button[2].onclick = function(){
+		cvetok[2].style.display = "block"
+		button[2].style.display = "none"
+	}
+	button[3].onclick = function(){
+		cvetok[3].style.display = "block"
+		button[3].style.display = "none"
+	}
+	button[4].onclick = function(){
+		cvetok[4].style.display = "block"
+		button[4].style.display = "none"
+	}
+	button[5].onclick = function(){
+		cvetok[5].style.display = "block"
+		button[5].style.display = "none"
+	}
+	button[6].onclick = function(){
+		cvetok[6].style.display = "block"
+		button[6].style.display = "none"
+	}
+	button[7].onclick = function(){
+		cvetok[7].style.display = "block"
+		button[7].style.display = "none"
+	}
+	button[8].onclick = function(){
+		cvetok[8].style.display = "block"
+		button[8].style.display = "none"
+	}
+	button[9].onclick = function(){
+		cvetok[9].style.display = "block"
+		button[9].style.display = "none"
+	}
+	button[10].onclick = function(){
+		shooter[0].style.display = "block"
+		button[10].style.display = "none"
+	}
+	button[11].onclick = function(){
+		shooter[1].style.display = "block"
+		button[11].style.display = "none"
+	}
+	button[12].onclick = function(){
+		shooter[2].style.display = "block"
+		button[12].style.display = "none"
+	}
+	button[13].onclick = function(){
+		shooter[3].style.display = "block"
+		button[13].style.display = "none"
+	}
+	button[14].onclick = function(){
+		shooter[4].style.display = "block"
+		button[14].style.display = "none"
+	}
+	button[15].onclick = function(){
+		shooter[5].style.display = "block"
+		button[15].style.display = "none"
+	}
+	button[16].onclick = function(){
+		shooter[6].style.display = "block"
+		button[16].style.display = "none"
+	}
+	button[17].onclick = function(){
+		shooter[7].style.display = "block"
+		button[17].style.display = "none"
+	}
+	button[18].onclick = function(){
+		shooter[8].style.display = "block"
+		button[18].style.display = "none"
+	}
+	button[19].onclick = function(){
+		shooter[9].style.display = "block"
+		button[19].style.display = "none"
+	}
+</script>
+</body>
+</html>
